@@ -4,7 +4,7 @@ import uuid
 
 
 def set_logger(args):
-    model_id = time.strftime("%Y%m%d-") + str(uuid.uuid4())[:8]
+    model_id = time.strftime("%Y%m%d%H%M-") + str(uuid.uuid4())[:8]
     formatter = logging.Formatter('%(asctime)s: %(message)s ', '%m/%d/%Y %I:%M:%S %p')
     logger = logging.getLogger(model_id)
     logger.setLevel(logging.INFO)
