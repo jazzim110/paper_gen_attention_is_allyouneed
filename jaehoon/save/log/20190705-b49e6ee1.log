@@ -1,0 +1,20 @@
+07/05/2019 07:05:13 PM: log file : ./save/log/20190705-b49e6ee1.log 
+07/05/2019 07:05:13 PM: Namespace(batch_size=32, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', save_log=True, sentence_model_gen='False') 
+07/05/2019 07:05:13 PM: ----- tokenize en first data ----- 
+07/05/2019 07:05:13 PM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/05/2019 07:05:13 PM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/05/2019 07:05:13 PM: {'▁David': 2394, '▁G': 378, 'al': 103, 'lo': 342, ':': 65, '▁This': 111, '▁is': 20, '▁Bill': 2742, '▁La': 874, 'n': 78, 'ge': 419, '.': 8, '▁I': 17, "'": 12, 'm': 45, '▁Da': 1485, 've': 68} 
+07/05/2019 07:05:37 PM: ----- tokenize de first data ----- 
+07/05/2019 07:05:37 PM: ['▁David', '▁Gal', 'lo', ':', '▁Das', '▁ist', '▁Bill', '▁Lang', 'e', '.', '▁Ich', '▁bin', '▁Da', 've', '▁Gal', 'lo', '.'] 
+07/05/2019 07:05:37 PM: [2945, 3275, 376, 43, 54, 17, 2918, 2984, 12, 8, 40, 192, 204, 911, 3275, 376, 8] 
+07/05/2019 07:05:37 PM: {'▁David': 2945, '▁Gal': 3275, 'lo': 376, ':': 43, '▁Das': 54, '▁ist': 17, '▁Bill': 2918, '▁Lang': 2984, 'e': 12, '.': 8, '▁Ich': 40, '▁bin': 192, '▁Da': 204, 've': 911} 
+07/05/2019 07:06:03 PM: max sentence length cutoff value 
+07/05/2019 07:06:03 PM: 31 
+07/05/2019 07:06:03 PM: max sentence length cutoff value 
+07/05/2019 07:06:03 PM: 34 
+07/05/2019 07:06:04 PM: inputs / outputs shape, first : inputs / second : outputs 
+07/05/2019 07:06:04 PM: (148988, 34) 
+07/05/2019 07:06:04 PM: (148988, 34) 
+07/05/2019 07:06:05 PM: x, y shape 
+07/05/2019 07:06:05 PM: torch.Size([32, 34]) 
+07/05/2019 07:06:05 PM: torch.Size([32, 34]) 

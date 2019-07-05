@@ -8,10 +8,11 @@ def get_args():
     # Main setting
     argp.add_argument('--sentence_model_gen', type=str, default="False")
     argp.add_argument('--input_file_dir', type=str,
-                      default="/home/jaehoon/JupyterNotebook/1.python3/5.2019_2_paper/dataset/de-en/train.en")
+                      default="/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en")
     argp.add_argument('--output_file_dir', type=str,
-                      default="/home/jaehoon/JupyterNotebook/1.python3/5.2019_2_paper/dataset/de-en/train.de")
+                      default="/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de")
     argp.add_argument('--batch_size', type=int, default=32)
+    argp.add_argument('--save_log', action='store_true', default=True)
 
 
 

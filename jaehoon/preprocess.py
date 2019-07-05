@@ -8,10 +8,11 @@ from jaehoon.sentence_model_gen import Sentence_model_gen
 
 class Preprocess:
 
-    def __init__(self, config):
+    def __init__(self, config, logger):
         self.prefix_en = "EN"
         self.prefix_de = "DE"
         self.config = config
+        self.logger = logger
         self.sentence_model_gen = config.sentence_model_gen
         self.input_file = config.input_file_dir
         self.output_file = config.output_file_dir
@@ -53,6 +54,11 @@ class Preprocess:
                     print("first sentense length : {}".format(len(line)))
                     print("dictory : {}".format(token2idx_en))
 
+                    self.logger.info("----- tokenize en first data -----")
+                    self.logger.info(wordpiece)
+                    self.logger.info(wordidx)
+                    self.logger.info(token2idx_en)
+
         return token2idx_en, idx2token_en, wordpiece_list_en, word_maxlen_en, sen_maxlen_en, sen_len_list_en
 
 
@@ -87,6 +93,11 @@ class Preprocess:
                     print("first wordidx : {}".format(wordidx))
                     print("first sentense length : {}".format(len(line)))
                     print("dictory : {}".format(token2idx_de))
+
+                    self.logger.info("----- tokenize de first data -----")
+                    self.logger.info(wordpiece)
+                    self.logger.info(wordidx)
+                    self.logger.info(token2idx_de)
 
         return token2idx_de, idx2token_de, wordpiece_list_de, word_maxlen_de, sen_maxlen_de, sen_len_list_de
 
@@ -131,6 +142,10 @@ class Preprocess:
         print(inputs[10])
         print(outputs[10])
 
+        self.logger.info("inputs / outputs shape, first : inputs / second : outputs")
+        self.logger.info(inputs.shape)
+        self.logger.info(outputs.shape)
+
         return token2idx_en, idx2token_en, token2idx_de, idx2token_de, inputs, outputs
 
 
@@ -149,6 +164,9 @@ class Preprocess:
                 cutoff_max_sen_len = k
                 print("누적 {}%를 차지하는 sentence length 값 : {}".format(cutoff_value*100, cutoff_max_sen_len))
                 break
+
+        self.logger.info("max sentence length cutoff value")
+        self.logger.info(cutoff_max_sen_len)
 
         return cutoff_max_sen_len
 
