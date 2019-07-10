@@ -184,6 +184,10 @@ class Preprocess:
         token2idx_en, idx2token_en, token2idx_de, idx2token_de, inputs, outputs = self.get_final_data()
         X, Y = self.dataloader(inputs, outputs, self.batch_size)
 
+        self.logger.info("dictionary shape")
+        self.logger.info("length of token2idx_en : {}".format(len(token2idx_en)))
+        self.logger.info("length of token2idx_de : {}".format(len(token2idx_de)))
+
         return X, Y, token2idx_en, idx2token_en, token2idx_de, idx2token_de
 
 

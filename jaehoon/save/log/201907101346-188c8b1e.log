@@ -1,0 +1,23 @@
+07/10/2019 01:46:39 PM: log file : ./save/log/201907101346-188c8b1e.log 
+07/10/2019 01:46:39 PM: Namespace(batch_size=32, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', save_log=True, sentence_model_gen='False') 
+07/10/2019 01:46:39 PM: ----- tokenize en first data ----- 
+07/10/2019 01:46:39 PM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/10/2019 01:46:39 PM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/10/2019 01:46:39 PM: {'▁David': 2394, '▁G': 378, 'al': 103, 'lo': 342, ':': 65, '▁This': 111, '▁is': 20, '▁Bill': 2742, '▁La': 874, 'n': 78, 'ge': 419, '.': 8, '▁I': 17, "'": 12, 'm': 45, '▁Da': 1485, 've': 68} 
+07/10/2019 01:46:52 PM: ----- tokenize de first data ----- 
+07/10/2019 01:46:52 PM: ['▁David', '▁Gal', 'lo', ':', '▁Das', '▁ist', '▁Bill', '▁Lang', 'e', '.', '▁Ich', '▁bin', '▁Da', 've', '▁Gal', 'lo', '.'] 
+07/10/2019 01:46:52 PM: [2945, 3275, 376, 43, 54, 17, 2918, 2984, 12, 8, 40, 192, 204, 911, 3275, 376, 8] 
+07/10/2019 01:46:52 PM: {'▁David': 2945, '▁Gal': 3275, 'lo': 376, ':': 43, '▁Das': 54, '▁ist': 17, '▁Bill': 2918, '▁Lang': 2984, 'e': 12, '.': 8, '▁Ich': 40, '▁bin': 192, '▁Da': 204, 've': 911} 
+07/10/2019 01:47:07 PM: max sentence length cutoff value 
+07/10/2019 01:47:07 PM: 31 
+07/10/2019 01:47:07 PM: max sentence length cutoff value 
+07/10/2019 01:47:07 PM: 34 
+07/10/2019 01:47:07 PM: inputs / outputs shape, first : inputs / second : outputs 
+07/10/2019 01:47:07 PM: (148988, 34) 
+07/10/2019 01:47:07 PM: (148988, 34) 
+07/10/2019 01:47:07 PM: dictionary shape 
+07/10/2019 01:47:07 PM: length of token2idx_en : 5073 
+07/10/2019 01:47:07 PM: length of token2idx_de : 5095 
+07/10/2019 01:47:07 PM: x, y shape 
+07/10/2019 01:47:07 PM: torch.Size([32, 34]) 
+07/10/2019 01:47:07 PM: torch.Size([32, 34]) 
