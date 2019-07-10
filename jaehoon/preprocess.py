@@ -110,6 +110,11 @@ class Preprocess:
         token2idx_en, idx2token_en, wordpiece_list_en, word_maxlen_en, sen_maxlen_en, sen_len_list_en = self.tokenize_en()
         token2idx_de, idx2token_de, wordpiece_list_de, word_maxlen_de, sen_maxlen_de, sen_len_list_de = self.tokenize_de()
 
+        self.logger.info("max length of en word : {}".format(word_maxlen_en))
+        self.logger.info("max length of de word : {}".format(word_maxlen_de))
+        self.logger.info("max length of en sentence : {}".format(sen_maxlen_en))
+        self.logger.info("max length of de sentence : {}".format(sen_maxlen_de))
+
         cutoff_max_sen_len_en = self.find_cutoff_max_sen_len(0.1, sen_len_list_en)
         cutoff_max_sen_len_de = self.find_cutoff_max_sen_len(0.1, sen_len_list_de)
         cutoff_max_sen_len = max(cutoff_max_sen_len_en, cutoff_max_sen_len_de)
