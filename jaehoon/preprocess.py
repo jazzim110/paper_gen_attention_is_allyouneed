@@ -41,8 +41,8 @@ class Preprocess:
                 wordidx = sp_en.EncodeAsIds(line)
                 wordpiece_list_en.append(wordidx)
                 sen_len_list_en.append(len(line))
-                if len(line) >= sen_maxlen_en:
-                    sen_maxlen_en = len(line)
+                if len(wordpiece) >= sen_maxlen_en:
+                    sen_maxlen_en = len(wordpiece)
                 for word, idx in zip(wordpiece, wordidx):
                     token2idx_en[word] = idx
                     idx2token_en[idx] = word
@@ -81,8 +81,8 @@ class Preprocess:
                 wordidx = sp_de.EncodeAsIds(line)
                 wordpiece_list_de.append(wordidx)
                 sen_len_list_de.append(len(line))
-                if len(line) >= sen_maxlen_de:
-                    sen_maxlen_de = len(line)
+                if len(wordpiece) >= sen_maxlen_de:
+                    sen_maxlen_de = len(wordpiece)
                 for word, idx in zip(wordpiece, wordidx):
                     token2idx_de[word] = idx
                     idx2token_de[idx] = word
