@@ -4,11 +4,10 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 
 flags.DEFINE_string('f', '', 'kernel')
-flags.DEFINE_string('data_path', '/home/jaehoon/JupyterNotebook/1.python3/5.2019_2_paper/dataset/de-en/',
-                    'IWSLT16 TED training data with preprocessed')
+flags.DEFINE_string('data_path', '/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/', 'IWSLT16 TED training data with preprocessed')
 
-flags.DEFINE_integer('sentence_maxlen', 20, 'Max length of the sentence')
-flags.DEFINE_integer('batch_size', 32, 'batch size of the data')
+flags.DEFINE_integer('sentence_maxlen', 40, 'Max length of the sentence')
+flags.DEFINE_integer('batch_size', 64, 'batch size of the data')
 flags.DEFINE_integer('stack_layer', 6, 'a number of encoder and decoder identical layers, denoted as N')
 flags.DEFINE_integer('multi_head', 8, 'a number of parallel attention layers, denoted as h')
 flags.DEFINE_integer('key_dim', 64, 'reduced dimension of each head, denoted as d_k')
@@ -23,4 +22,4 @@ flags.DEFINE_float('dropout', 0.1, 'After softmax layer, use dropout when needed
 flags.DEFINE_float('beta1', 0.9, 'Adam optimizer beta 1 number')
 flags.DEFINE_float('beta2', 0.98, 'Adam optimizer beta 2 number')
 flags.DEFINE_float('adam_epsilon', 1e-8, 'Adam optimizer epsilon number')
-flags.DEFINE_float('learning_rate', 0.0001, 'learning rate of adam optimizer')
+flags.DEFINE_float('learning_rate', 1e-4, 'learning rate of adam optimizer')

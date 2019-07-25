@@ -1,0 +1,21 @@
+07/25/2019 01:09:10 PM: log file : ./save/log/201907251309-80799168.log 
+07/25/2019 01:09:10 PM: Namespace(N_turns=6, batch_size=64, d_ff=2048, debug=False, dims=512, dropout=0.1, heads=8, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', learning_rate=0.0001, model_dir='/home/jaehoon/Git/attention_is_allyouneed/jaehoon/model/', n_epochs=200, output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', print_fre=100, save_log=True, sentence_model_gen='False', vocab_size=5000) 
+07/25/2019 01:09:12 PM: ----- tokenize en first data ----- 
+07/25/2019 01:09:12 PM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/25/2019 01:09:12 PM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/25/2019 01:09:12 PM: {} 
+07/25/2019 01:09:25 PM: ----- tokenize de first data ----- 
+07/25/2019 01:09:25 PM: ['▁David', '▁Gal', 'lo', ':', '▁Das', '▁ist', '▁Bill', '▁Lang', 'e', '.', '▁Ich', '▁bin', '▁Da', 've', '▁Gal', 'lo', '.'] 
+07/25/2019 01:09:25 PM: [2945, 3275, 376, 43, 54, 17, 2918, 2984, 12, 8, 40, 192, 204, 911, 3275, 376, 8] 
+07/25/2019 01:09:25 PM: {} 
+07/25/2019 01:09:40 PM: max length of en word : 16 
+07/25/2019 01:09:40 PM: max length of de word : 16 
+07/25/2019 01:09:40 PM: max length of en sentence : 846 
+07/25/2019 01:09:40 PM: max length of de sentence : 919 
+07/25/2019 01:09:40 PM: max sentence length cutoff value 
+07/25/2019 01:09:40 PM: 31 
+07/25/2019 01:09:40 PM: max sentence length cutoff value 
+07/25/2019 01:09:40 PM: 34 
+07/25/2019 01:09:41 PM: inputs / outputs shape, first : inputs / second : outputs 
+07/25/2019 01:09:41 PM: (148988, 34) 
+07/25/2019 01:09:41 PM: (148988, 34) 

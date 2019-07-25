@@ -1,0 +1,6 @@
+07/25/2019 01:07:17 PM: log file : ./save/log/201907251307-e3a345b1.log 
+07/25/2019 01:07:17 PM: Namespace(N_turns=6, batch_size=64, d_ff=2048, debug=False, dims=512, dropout=0.1, heads=8, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', learning_rate=0.0001, model_dir='/home/jaehoon/Git/attention_is_allyouneed/jaehoon/model/', n_epochs=200, output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', print_fre=100, save_log=True, sentence_model_gen='False', vocab_size=5000) 
+07/25/2019 01:07:19 PM: ----- tokenize en first data ----- 
+07/25/2019 01:07:19 PM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/25/2019 01:07:19 PM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/25/2019 01:07:19 PM: {} 

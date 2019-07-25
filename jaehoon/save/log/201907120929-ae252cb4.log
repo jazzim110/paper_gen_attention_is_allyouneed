@@ -1,0 +1,27 @@
+07/12/2019 09:29:09 AM: log file : ./save/log/201907120929-ae252cb4.log 
+07/12/2019 09:29:09 AM: Namespace(batch_size=32, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', save_log=True, sentence_model_gen='False') 
+07/12/2019 09:29:09 AM: ----- tokenize en first data ----- 
+07/12/2019 09:29:09 AM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/12/2019 09:29:09 AM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/12/2019 09:29:09 AM: {'▁David': 2394, '▁G': 378, 'al': 103, 'lo': 342, ':': 65, '▁This': 111, '▁is': 20, '▁Bill': 2742, '▁La': 874, 'n': 78, 'ge': 419, '.': 8, '▁I': 17, "'": 12, 'm': 45, '▁Da': 1485, 've': 68} 
+07/12/2019 09:29:22 AM: ----- tokenize de first data ----- 
+07/12/2019 09:29:22 AM: ['▁David', '▁Gal', 'lo', ':', '▁Das', '▁ist', '▁Bill', '▁Lang', 'e', '.', '▁Ich', '▁bin', '▁Da', 've', '▁Gal', 'lo', '.'] 
+07/12/2019 09:29:22 AM: [2945, 3275, 376, 43, 54, 17, 2918, 2984, 12, 8, 40, 192, 204, 911, 3275, 376, 8] 
+07/12/2019 09:29:22 AM: {'▁David': 2945, '▁Gal': 3275, 'lo': 376, ':': 43, '▁Das': 54, '▁ist': 17, '▁Bill': 2918, '▁Lang': 2984, 'e': 12, '.': 8, '▁Ich': 40, '▁bin': 192, '▁Da': 204, 've': 911} 
+07/12/2019 09:29:36 AM: max length of en word : 16 
+07/12/2019 09:29:36 AM: max length of de word : 16 
+07/12/2019 09:29:36 AM: max length of en sentence : 846 
+07/12/2019 09:29:36 AM: max length of de sentence : 919 
+07/12/2019 09:29:36 AM: max sentence length cutoff value 
+07/12/2019 09:29:36 AM: 31 
+07/12/2019 09:29:36 AM: max sentence length cutoff value 
+07/12/2019 09:29:36 AM: 34 
+07/12/2019 09:29:37 AM: inputs / outputs shape, first : inputs / second : outputs 
+07/12/2019 09:29:37 AM: (148988, 34) 
+07/12/2019 09:29:37 AM: (148988, 34) 
+07/12/2019 09:29:37 AM: dictionary shape 
+07/12/2019 09:29:37 AM: length of token2idx_en : 5073 
+07/12/2019 09:29:37 AM: length of token2idx_de : 5095 
+07/12/2019 09:29:37 AM: x, y shape 
+07/12/2019 09:29:37 AM: torch.Size([32, 34]) 
+07/12/2019 09:29:37 AM: torch.Size([32, 34]) 

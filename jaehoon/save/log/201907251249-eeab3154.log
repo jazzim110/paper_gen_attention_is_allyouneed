@@ -1,0 +1,44 @@
+07/25/2019 12:49:10 PM: log file : ./save/log/201907251249-eeab3154.log 
+07/25/2019 12:49:10 PM: Namespace(N_turns=6, batch_size=64, d_ff=2048, debug=False, dims=512, dropout=0.1, heads=8, input_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en', learning_rate=0.0001, model_dir='/home/jaehoon/Git/attention_is_allyouneed/jaehoon/model/', n_epochs=200, output_file_dir='/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de', print_fre=100, save_log=True, sentence_model_gen='False', vocab_size=5000) 
+07/25/2019 12:49:13 PM: ----- tokenize en first data ----- 
+07/25/2019 12:49:13 PM: ['▁David', '▁G', 'al', 'lo', ':', '▁This', '▁is', '▁Bill', '▁La', 'n', 'ge', '.', '▁I', "'", 'm', '▁Da', 've', '▁G', 'al', 'lo', '.'] 
+07/25/2019 12:49:13 PM: [2394, 378, 103, 342, 65, 111, 20, 2742, 874, 78, 419, 8, 17, 12, 45, 1485, 68, 378, 103, 342, 8] 
+07/25/2019 12:49:13 PM: {} 
+07/25/2019 12:49:26 PM: ----- tokenize de first data ----- 
+07/25/2019 12:49:26 PM: ['▁David', '▁Gal', 'lo', ':', '▁Das', '▁ist', '▁Bill', '▁Lang', 'e', '.', '▁Ich', '▁bin', '▁Da', 've', '▁Gal', 'lo', '.'] 
+07/25/2019 12:49:26 PM: [2945, 3275, 376, 43, 54, 17, 2918, 2984, 12, 8, 40, 192, 204, 911, 3275, 376, 8] 
+07/25/2019 12:49:26 PM: {} 
+07/25/2019 12:49:40 PM: max length of en word : 16 
+07/25/2019 12:49:40 PM: max length of de word : 16 
+07/25/2019 12:49:40 PM: max length of en sentence : 846 
+07/25/2019 12:49:40 PM: max length of de sentence : 919 
+07/25/2019 12:49:40 PM: max sentence length cutoff value 
+07/25/2019 12:49:40 PM: 31 
+07/25/2019 12:49:40 PM: max sentence length cutoff value 
+07/25/2019 12:49:40 PM: 34 
+07/25/2019 12:49:41 PM: inputs / outputs shape, first : inputs / second : outputs 
+07/25/2019 12:49:41 PM: (148988, 34) 
+07/25/2019 12:49:41 PM: (148988, 34) 
+07/25/2019 12:49:55 PM: time = 0m, epoch 1, iter = 100, loss = 8.514, 0s per 100 iters 
+07/25/2019 12:50:10 PM: time = 0m, epoch 1, iter = 200, loss = 8.507, 0s per 100 iters 
+07/25/2019 12:50:24 PM: time = 1m, epoch 1, iter = 300, loss = 8.503, 0s per 100 iters 
+07/25/2019 12:50:38 PM: time = 1m, epoch 1, iter = 400, loss = 8.502, 0s per 100 iters 
+07/25/2019 12:50:52 PM: time = 1m, epoch 1, iter = 500, loss = 8.500, 0s per 100 iters 
+07/25/2019 12:51:07 PM: time = 1m, epoch 1, iter = 600, loss = 8.499, 0s per 100 iters 
+07/25/2019 12:51:22 PM: time = 2m, epoch 1, iter = 700, loss = 8.499, 0s per 100 iters 
+07/25/2019 12:51:36 PM: time = 2m, epoch 1, iter = 800, loss = 8.498, 0s per 100 iters 
+07/25/2019 12:51:50 PM: time = 2m, epoch 1, iter = 900, loss = 8.498, 0s per 100 iters 
+07/25/2019 12:52:05 PM: time = 2m, epoch 1, iter = 1000, loss = 8.498, 0s per 100 iters 
+07/25/2019 12:52:19 PM: time = 3m, epoch 1, iter = 1100, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:52:33 PM: time = 3m, epoch 1, iter = 1200, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:52:48 PM: time = 3m, epoch 1, iter = 1300, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:53:03 PM: time = 3m, epoch 1, iter = 1400, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:53:17 PM: time = 4m, epoch 1, iter = 1500, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:53:31 PM: time = 4m, epoch 1, iter = 1600, loss = 8.497, 0s per 100 iters 
+07/25/2019 12:53:46 PM: time = 4m, epoch 1, iter = 1700, loss = 8.495, 0s per 100 iters 
+07/25/2019 12:54:00 PM: time = 4m, epoch 1, iter = 1800, loss = 8.495, 0s per 100 iters 
+07/25/2019 12:54:15 PM: time = 5m, epoch 1, iter = 1900, loss = 8.495, 0s per 100 iters 
+07/25/2019 12:54:29 PM: time = 5m, epoch 1, iter = 2000, loss = 8.495, 0s per 100 iters 
+07/25/2019 12:54:44 PM: time = 5m, epoch 1, iter = 2100, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:54:59 PM: time = 5m, epoch 1, iter = 2200, loss = 8.496, 0s per 100 iters 
+07/25/2019 12:55:13 PM: time = 5m, epoch 1, iter = 2300, loss = 8.496, 0s per 100 iters 

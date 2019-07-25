@@ -11,8 +11,19 @@ def get_args():
                       default="/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.en")
     argp.add_argument('--output_file_dir', type=str,
                       default="/home/jaehoon/Git/attention_is_allyouneed/dataset/de-en/train.de")
-    argp.add_argument('--batch_size', type=int, default=32)
+    argp.add_argument('--batch_size', type=int, default=64)
     argp.add_argument('--save_log', action='store_true', default=True)
+    argp.add_argument('--model_dir', type=str, default="/home/jaehoon/Git/attention_is_allyouneed/jaehoon/model/")
+    argp.add_argument('--debug', action='store_true', default=False)
+    argp.add_argument('--dims', type=int, default=512)
+    argp.add_argument('--d_ff', type=int, default=2048)
+    argp.add_argument('--dropout', type=float, default=0.1)
+    argp.add_argument('--heads', type=int, default=8)
+    argp.add_argument('--N_turns', type=int, default=6)
+    argp.add_argument('--vocab_size', type=int, default=5000)
+    argp.add_argument('--learning_rate', type=float, default=0.0001)
+    argp.add_argument('--n_epochs', type=int, default=200)
+    argp.add_argument('--print_fre', type=int, default=100)
 
 
 

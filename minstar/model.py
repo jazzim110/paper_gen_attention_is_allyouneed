@@ -180,7 +180,7 @@ def decoding_stack(inputs, enc_input, num_stack=FLAGS.stack_layer):
 # total model graph
 class model_graph():
     def __init__(self, source=None, target=None):
-        # x, y : source _ (32, 20), target _ (32, 20)
+        # x, y : source _ (64, 40), target _ (64, 40)
         self.source = source
         self.target = target
 
@@ -190,6 +190,7 @@ class model_graph():
         with tf.variable_scope("Encoding"):
             # input embedding lookup with table, source = de_vocab
             self.emb_outputs_enc = embedding(self.enc_inputs, input_vocab=self.source, padding=True, scaling=True, scope="enc_embed")
+            #aaa = self.emb_outputs_enc.detach().numpy()
 
             # added positional encoding to embedding matrix
             self.pos_outputs_enc = position_encoding(scaling=True, scope="enc_pe")
@@ -219,21 +220,22 @@ class model_graph():
 
         # onehot encoding to use as label in loss function
         self.y_onehot = tf.one_hot(self.dec_inputs, depth=len(self.target.token2idx))
+        print()
 
     def loss_fn(self):
         with tf.variable_scope("loss_function"):
             self.is_target = tf.to_float(tf.not_equal(self.dec_inputs, 0))
-            self.loss = tf.nn.softmax_cross_entropy_with_logits(logits=self.logits, labels=self.y_onehot)
-            self.mean_loss = tf.reduce_sum(self.loss * self.is_target) / tf.reduce_sum(self.is_target)
-            self.accuracy = tf.reduce_sum(tf.to_float(tf.equal(self.pred, self.dec_inputs)) * self.is_target) / (tf.reduce_sum(self.is_target))
+            self.cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=self.logits, labels=self.y_onehot)
+            self.loss = tf.reduce_sum(self.cross_entropy * self.is_target) / (tf.reduce_sum(self.is_target) + 1e-8)
+            # self.accuracy = tf.reduce_sum(tf.to_float(tf.equal(self.pred, self.dec_inputs)) * self.is_target) / (tf.reduce_sum(self.is_target))
 
-        return self.is_target, self.loss, self.mean_loss, self.accuracy
+        return self.is_target, self.loss
 
     def train_fn(self):
         with tf.variable_scope("train_function"):
             self.global_step = tf.Variable(0, name='global_step', trainable=False)
             self.optimizer = tf.train.AdamOptimizer(learning_rate=FLAGS.learning_rate, beta1=FLAGS.beta1, \
                                                     beta2=FLAGS.beta2, epsilon=FLAGS.adam_epsilon)
-            self.train_op = self.optimizer.minimize(self.mean_loss, global_step=self.global_step)
+            self.train_op = self.optimizer.minimize(self.loss, global_step=self.global_step)
 
         return self.global_step, self.optimizer, self.train_op
